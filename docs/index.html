@@ -228,7 +228,7 @@ for online transaction data and telephone payment transaction data.</p>
 <p>200 indicates a transaction already seen (<code>provider_id</code> or <code>processor_id</code> seen before)</p>
 </li>
 </ul>
-<p>On receipt of a response outside of the 200-299 range, a payment MUST be retried.</p>
+<p>On receipt of a response outside of the 200-299 range, the notification MUST be retried.</p>
 <p>Retries must continue at a maximum frequency of once per hour for up to 72 hours.</p>
 <p>Other response codes possible are:</p>
 <table>
@@ -276,7 +276,7 @@ for online transaction data and telephone payment transaction data.</p>
   </span>}</span>,
   "<span class="hljs-attribute">card_type</span>": <span class="hljs-value"><span class="hljs-string">"master-card"</span></span>,
   "<span class="hljs-attribute">name_on_card</span>": <span class="hljs-value"><span class="hljs-string">"Jane Doe"</span></span>,
-  "<span class="hljs-attribute">email_address: `jane_doe@example.com`</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
+  "<span class="hljs-attribute">email_address</span>": <span class="hljs-value"><span class="hljs-string">"jane_doe@example.com"</span></span>,
   "<span class="hljs-attribute">card_expiry</span>": <span class="hljs-value"><span class="hljs-string">"02/19"</span></span>,
   "<span class="hljs-attribute">last_four_digits</span>": <span class="hljs-value"><span class="hljs-string">"1234"</span></span>,
   "<span class="hljs-attribute">first_six_digits</span>": <span class="hljs-value"><span class="hljs-string">"654321"</span>
@@ -350,7 +350,7 @@ for online transaction data and telephone payment transaction data.</p>
     "<span class="hljs-attribute">name_on_card</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
     </span>}</span>,
-    "<span class="hljs-attribute">email_address: `jane_doe@example.com`</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">email_address</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
     </span>}</span>,
     "<span class="hljs-attribute">card_expiry</span>": <span class="hljs-value">{
@@ -392,7 +392,7 @@ for online transaction data and telephone payment transaction data.</p>
   </span>}</span>,
   "<span class="hljs-attribute">card_type</span>": <span class="hljs-value"><span class="hljs-string">"master-card"</span></span>,
   "<span class="hljs-attribute">name_on_card</span>": <span class="hljs-value"><span class="hljs-string">"Jane Doe"</span></span>,
-  "<span class="hljs-attribute">email_address: `jane_doe@example.com`</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
+  "<span class="hljs-attribute">email_address</span>": <span class="hljs-value"><span class="hljs-string">"jane_doe@example.com"</span></span>,
   "<span class="hljs-attribute">card_expiry</span>": <span class="hljs-value"><span class="hljs-string">"02/19"</span></span>,
   "<span class="hljs-attribute">last_four_digits</span>": <span class="hljs-value"><span class="hljs-string">"1234"</span></span>,
   "<span class="hljs-attribute">first_six_digits</span>": <span class="hljs-value"><span class="hljs-string">"654321"</span></span>,
@@ -467,7 +467,7 @@ for online transaction data and telephone payment transaction data.</p>
     "<span class="hljs-attribute">name_on_card</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
     </span>}</span>,
-    "<span class="hljs-attribute">email_address: `jane_doe@example.com`</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">email_address</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
     </span>}</span>,
     "<span class="hljs-attribute">card_expiry</span>": <span class="hljs-value">{
@@ -512,7 +512,7 @@ for online transaction data and telephone payment transaction data.</p>
   </span>}</span>,
   "<span class="hljs-attribute">card_type</span>": <span class="hljs-value"><span class="hljs-string">"master-card"</span></span>,
   "<span class="hljs-attribute">name_on_card</span>": <span class="hljs-value"><span class="hljs-string">"Jane Doe"</span></span>,
-  "<span class="hljs-attribute">email_address: `jane_doe@example.com`</span>": <span class="hljs-value"><span class="hljs-string">"Hello, world!"</span></span>,
+  "<span class="hljs-attribute">email_address</span>": <span class="hljs-value"><span class="hljs-string">"jane_doe@example.com"</span></span>,
   "<span class="hljs-attribute">card_expiry</span>": <span class="hljs-value"><span class="hljs-string">"02/19"</span></span>,
   "<span class="hljs-attribute">last_four_digits</span>": <span class="hljs-value"><span class="hljs-string">"1234"</span></span>,
   "<span class="hljs-attribute">first_six_digits</span>": <span class="hljs-value"><span class="hljs-string">"654321"</span></span>,
@@ -587,7 +587,7 @@ for online transaction data and telephone payment transaction data.</p>
     "<span class="hljs-attribute">name_on_card</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
     </span>}</span>,
-    "<span class="hljs-attribute">email_address: `jane_doe@example.com`</span>": <span class="hljs-value">{
+    "<span class="hljs-attribute">email_address</span>": <span class="hljs-value">{
       "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"string"</span>
     </span>}</span>,
     "<span class="hljs-attribute">card_expiry</span>": <span class="hljs-value">{
@@ -642,7 +642,7 @@ for online transaction data and telephone payment transaction data.</p>
     <span class="hljs-string">"code"</span>,
     <span class="hljs-string">"description"</span>
   ]
-</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 05 Feb 2019</p><script>/* eslint-env browser */
+</span>}</code></pre><div style="height: 1px;"></div></div></div></div></div></section></div></div></div><p style="text-align: center;" class="text-muted">Generated by&nbsp;<a href="https://github.com/danielgtaylor/aglio" class="aglio">aglio</a>&nbsp;on 26 Feb 2019</p><script>/* eslint-env browser */
 /* eslint quotes: [2, "single"] */
 'use strict';
 
