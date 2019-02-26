@@ -185,7 +185,7 @@ GOV.UK Pay will respond with either a 200 or 201 status code to indicate a succe
 * 201 indicates a transaction not seen before
 * 200 indicates a transaction already seen (`provider_id` or `processor_id` seen before)
 
-On receipt of a response outside of the 200-299 range, a payment MUST be retried.
+On receipt of a response outside of the 200-299 range, the notification MUST be retried.
 
 Retries must continue at a maximum frequency of once per hour for up to 72 hours.
 
