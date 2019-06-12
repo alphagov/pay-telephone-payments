@@ -7,6 +7,7 @@ HOST: http://publicapi.payments.service.gov.uk/
 
 | Date | Author | Comment |
 |------|--------|---------|
+| 12/6/19 | David Heath | Add optional telephone number to notification payload |
 | 12/6/19 | David Heath | Add notes of decisions made 27/3 (reference, description and date semantics) |
 | 5/6/19 | David Heath | return GOV.UK Pay status from notification endpoint, changes to `payment_outcome` structure. Idempotency based on `provider_id`. Add 422 HTTP response code. |
 | 24/1/19 | David Heath | first draft |
@@ -147,6 +148,7 @@ NHS BSA will be able to issue refunds of telephone payments via the GOV.UK Pay s
 + card_expiry: `02/19` (string, required) - card expiry date as MM/YY
 + last_four_digits: `1234` (string, required)
 + first_six_digits: `654321` (string, required)
++ telephone_number: `+447700900796` (string, optional) - caller's phone number (stored as metadata field in GOV.UK Pay)
 
 ## Payment Notification Outcome
 
