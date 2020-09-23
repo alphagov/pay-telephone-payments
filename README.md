@@ -46,7 +46,7 @@ The call to notify us about a phone payment with the GOV.UK Pay API is:
 
 You must only store a record about a phone payment on GOV.UK Pay after you've asked Worldpay to capture the money from your user's payment card.
 
-Example payloadcode:
+Example request body:
 
 ```json
 {
@@ -59,8 +59,7 @@ Example payloadcode:
   "provider_id": "45678",
   "auth_code": "91011",
   "payment_outcome": {
-    "status": "success",
-    }
+    "status": "success"
   },
   "card_type": "master-card",
   "name_on_card": "Mr Sherlock Holmes",
