@@ -1,8 +1,9 @@
-** Archived **
-
-This repository existed for a specific collaboration with NHS BSA. The API described was only ever available to a limited audience.
-
-It is now superseded by the payment authorisation API. Please see https://docs.payments.service.gov.uk/moto_payments/ for more details
+> **Archived**
+> 
+> This repository existed for a specific collaboration with NHS BSA. The API described was only ever available to a limited audience.
+> It is now superseded by the payment authorisation API. 
+> 
+> Please see https://docs.payments.service.gov.uk/moto_payments/ for more details
 
 # Storing records about phone payments on GOV.UK Pay
 
